@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFinder</title>
+    <link rel="stylesheet" href="/c.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-film logo-icon"></i>
+                <h1>MovieFinder</h1>
+            </div>
+            <p class="tagline">Откройте для себя мир кино: находите, сохраняйте, наслаждайтесь</p>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Введите название фильма...">
+                <button id="search-btn"><i class="fas fa-search"></i> Найти</button>
+            </div>
+            
+            <div class="categories">
+                <div class="category active">Все</div>
+                <div class="category">Новые</div>
+                <div class="category">Популярные</div>
+                <div class="category">Боевики</div>
+                <div class="category">Драмы</div>
+                <div class="category">Комедии</div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="movies-grid">
+                <div class="movie-card featured">
+                    <div class="featured-badge">Рекомендованно</div>
+                    <img src="https://i.pinimg.com/originals/14/9c/55/149c552a97819f1bd0d425d84915abb0.jpg" alt="Постер фильма" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Время</h3>
+                        <div class="movie-meta">
+                            <span class="movie-year">2021</span>
+                            <span class="movie-rating"><i class="fas fa-star"></i> 8.5</span>
+                        </div>
+                        <p class="movie-description">В мире будущего время стало валютой, и люди могут покупать, продавать и обменивать его. Бедные умирают молодыми, а богатые живут вечно.</p>
+                        <div class="movie-actions">
+                            <button class="btn btn-details" data-movie="Время">Подробнее</button>
+                            <button class="btn btn-favorite" data-movie="Время"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="https://i.ytimg.com/vi/eVMqxD1nO9s/maxresdefault.jpg" alt="Постер фильма" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Тёмный рыцарь</h3>
+                        <div class="movie-meta">
+                            <span class="movie-year">2008</span>
+                            <span class="movie-rating"><i class="fas fa-star"></i> 9.0</span>
+                        </div>
+                        <p class="movie-description">Бэтмен поднимает ставки в войне с преступностью. У него есть возможность раз и навсегда уничтожить зло, торжествующее в городе.</p>
+                        <div class="movie-actions">
+                            <button class="btn btn-details" data-movie="Тёмный рыцарь">Подробнее</button>
+                            <button class="btn btn-favorite" data-movie="Тёмный рыцарь"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="https://i.pinimg.com/originals/7e/3d/21/7e3d216c98d683d8c85ccf3557320421.jpg" alt="Постер фильма" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Начало</h3>
+                        <div class="movie-meta">
+                            <span class="movie-year">2010</span>
+                            <span class="movie-rating"><i class="fas fa-star"></i> 8.8</span>
+                        </div>
+                        <p class="movie-description">Кобб – талантливый вор, лучший из лучших в опасном искусстве извлечения: он крадет ценные секреты из глубин подсознания во время сна.</p>
+                        <div class="movie-actions">
+                            <button class="btn btn-details" data-movie="Начало">Подробнее</button>
+                            <button class="btn btn-favorite" data-movie="Начало"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Бле бле бле бла бла бла корпарейшн</p>
+        </footer>
+    </div>
+
+    <div class="notification" id="notification"></div>
+
+    <script src="/j.js"></script>
+
+</body>
+</html>
